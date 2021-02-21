@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>플렉스 예제 02</title>
+    
+    <style>
+/*       body{margin: 0; justify-content: center;}*/
+        .container{ border: 1px solid #000; width: 1200px; margin: auto;}
+        header{background-color: tomato; padding: 2em; text-align: center;}
+        section{display: flex; flex-direction: row;}
+        section article{border: 1px solid #000; height: 500px; display: flex; justify-content: center; align-items: center;}
+        .left{flex: 1; background-color: cornflowerblue;} 
+        .main{flex: 4; background-color: cornsilk;}
+        .right{flex: 1; background-color: crimson;}
+        footer{padding: 2em; text-align: center; background-color:darkslateblue;}
+        
+        @media (max-width :768px) {
+            .container {width: 100%;}
+            .section {flex-direction: column;}
+            
+            .left{order: 2;}
+            .main{order: 1;}
+            .right{order: 3;}
+        }
+    </style>
+</head>
+<body>
+<!-- 플렉스 시멘틱 레이아웃(반응형) -->
+
+<div class="container">
+    <header>HEADER</header>
+    
+    <section>
+        <article class="left"> ASIDE 01</article>
+        <article class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquid ipsum, dolore saepe optio quaerat sint earum labore minima veniam. Repellendus officia repellat, necessitatibus suscipit quae culpa velit, voluptate animi.</article>
+        <article class="right">ASIDE 02</article>
+    </section>
+    
+    <footer>FOOTER</footer>
+</div>
+</body>
+</html>
