@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>플렉스 가로 세로 혼합 레이아웃</title>
+    
+    <style>
+        body{margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;}
+        a{text-decoration:none;}
+        section{width: 1200px; display: flex;}
+        section article{flex: 1;}
+        
+        .content1{background-color: beige;}
+        
+        .content2{display: flex; flex-direction: column;}
+        .content2 div{flex: 1; padding: 20px;}
+       
+        
+        .sub1{background-color: cornflowerblue;}
+        .sub2{background-color: darkorchid;}
+        
+        @media (max-width:768px) {
+            section{flex-direction: column;}
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article class="content1">
+            <h2>content1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id ut culpa iure nesciunt voluptatum unde consequatur, excepturi voluptates doloremque, cupiditate. Laudantium in possimus beatae ex quidem doloribus ducimus est eveniet, repudiandae, voluptates hic esse minus consequatur vel iure adipisci optio tempore! Rerum unde inventore in eligendi sequi ut, enim, pariatur perferendis, eius provident vitae earum, optio. Maxime est distinctio aliquid deserunt dolorem illo impedit a minima ipsam voluptatem voluptas quisquam, ducimus quis saepe, sit error voluptatum aut officiis asperiores repudiandae. Perspiciatis tempore velit illo rem, aliquid, at mollitia architecto est odio animi! Iusto quia ex quaerat praesentium enim consequuntur.</p>
+        </article>
+        <article class="content2">
+           
+            <div class="sub1">
+                <h2>sub1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur quidem dolore officia eaque nam, et iste est tempore, quaerat optio! Ratione velit cumque magni nisi libero inventore recusandae eaque.</p>
+            </div>
+            <div class="sub2">
+                <h2>sub2</h2>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
