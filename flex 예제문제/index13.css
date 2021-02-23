@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.parent {display: flex; justify-content: center; flex-wrap: wrap;}
+/*.child {background-color: coral; text-align: center; border-radius: 5px; height: 200px; margin: 5px; font-size: 3em; line-height: 200px; flex-grow: 1; flex-basis: 300px;*/
+
+.child {background-color: coral; text-align: center; border-radius: 5px; height: 200px; margin: 5px; font-size: 3em; line-height: 200px; flex: 1 300px;}
+
+@media (min-width : 768px) and (max-width : 1024px){.parent {flex-wrap: wrap;}}
+
+@media (max-width : 767px) {.parent {flex-wrap: wrap;}}
+/*flex-basis가 flex-wrap의 기준점 역할을 한다.*/
+/*flex wrap과 basis는 함께 있어야 한다*/

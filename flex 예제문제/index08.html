@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>플렉스 레이아웃 설계 1</title>
+    
+    <style>
+        body{margin: 0; height: 100vh;}
+        .container{}
+        header{height: 150px; background-color: cornflowerblue; color: #fff; text-align: center;}
+        section{ display: flex;}
+        
+        article , aside, nav{height: calc(100vh - 300px);}
+        article{flex: 3; background-color: #eee;}
+        aside{flex: 1; background-color: #ddd;}
+        nav{flex: 1; background: #ccc;}
+        footer{height: 150px; background-color: gray; color: #fff; text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>HEADER</header>
+        <section>
+            <article>ARTICLE</article>
+            <aside>ASIDE</aside>
+            <nav>NAV</nav>
+        </section>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {font-family: 'Raleway', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;}
+
+.parent {width: 600px; display: flex;  flex-wrap: wrap;}
+.child {height: 150px; width: calc(100% / 2)%; padding: 15px; display: flex; box-sizing: border-box; }
+.child div {flex: 1; display: flex; justify-content: center; align-content: center; background-color: darkolivegreen}

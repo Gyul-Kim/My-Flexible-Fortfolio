@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+body {margin: 0; height: 100vh;}
+.container {}
+
+header{background-color: pink; height: 100px;}
+section{display: flex;}
+nav, section article, section aside{height:  calc(100vh - 200px);}
+
+section article{background-color: #ddd; flex: 4;}
+section aside{background-color: #ccc; flex-basis: 250px;}
+
+nav{background-color: #eee; flex-basis: 250px;}
+footer{background-color: azure; height: 100px;}
+
+/* 크기 고정하는 방법 : flex 쓰지말고, width 혹은 flex-basis 사용하면 됨*/

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>플렉스 레이아웃 설계2</title>
+    
+    <style>
+        .container{border: 1px solid #000; display: flex;}
+        nav{border: 1px solid red; flex: 1;}
+        main{border: 1px solid blue; flex: 5;}
+        header{height: 100px; background-color: teal; color: #fff; }
+        
+        section{display: flex;}
+        section article,section aside{border: 1px solid orange; height: calc(100vh - 200px);}
+        section article{flex: 4; background-color: pink;}
+        section aside{flex: 1; background-color: yellow;}
+        footer{height: 100px; background-color: beige; color: #fff;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>NAV</nav>
+        <main>
+            <header>HEADER</header>
+            <section>
+                <article>ARTICLE</article>
+                <aside>ASIDE</aside>
+            </section>
+            <footer>FOOTER</footer>
+        </main>
+    </div>
+</body>
+</html>

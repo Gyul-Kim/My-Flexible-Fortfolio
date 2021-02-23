@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+
+body{height: 100vh; display: flex; justify-content: center; align-items: center;}
+.card-items{width: 1000px;  display: flex; justify-content: space-between;}
+.card {width: 300px; height: 400px; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; }
+.card img{width: 100%;}
+
+/*justyfy content의 space between의 경우 flex-direction의 row에서만 쓰는 개념이 아니라는 것!*/

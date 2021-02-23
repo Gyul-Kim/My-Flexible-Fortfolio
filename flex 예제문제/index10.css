@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+*{box-sizing: border-box;}
+.container{border: 1px solid #000; display: flex;}
+nav{flex: 1; background-color: #ddd;}
+main{flex: 5;}
+header{background-color: blanchedalmond; height: 100px;}
+
+.inner{display: flex;}
+.inner section{flex: 4; border: 1px solid green;}
+.inner section article{background-color: pink; height: calc(100vh - 200px);}
+footer{height: 100px; background-color: azure;}
+
+.inner aside {flex: 1; border: 1px solid green;}
