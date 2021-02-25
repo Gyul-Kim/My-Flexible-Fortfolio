@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body { margin: : 0; font-family: 'Noto Sans KR', sans-serif; color: #222; font-size: 15px; font-weight: 300;}
+
+/*RESET CSS*/
+a {text-decoration: none; color: #fff;}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: normal;}
+button {cursor: pointer; outline: none;}
+input, textarea, select {outline: none;}
+button, input, textarea, select {font-family: 'Noto Sans KR', sans-serif;}
+
+section {width: 1200px; margin: auto;}
+.consulting-header {text-align: center;}
+.consulting-header h1{font-size: 32px;}
+.consulting-header h1 span{color: #e17055;}
+
+.consulting-header hr {width: 100px; height: 3px; margin: 25px auto; border:  none; background-color: #74b9ff;}
+.consulting-header hr p {}

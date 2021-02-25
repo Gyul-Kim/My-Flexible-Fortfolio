@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>반응형 헤더 네비게이션</title>
+    
+    <link rel="stylesheet" href="index03.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="로고이미지"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">PLAN & HISTORY</a></li>
+                <li><a href="#">AWARDS</a></li>
+                <li><a href="#">LOCATION</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        
+            <div class="sns">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            
+            <div class="trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <script>
+    $('.trigger').click(function(){
+        $(this).toggleClass('active')
+        $('.gnb, .sns').toggle()
+    });
+    </script>
+</body>
+</html>
