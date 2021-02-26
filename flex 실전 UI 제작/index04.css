@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 
-body { margin: : 0; font-family: 'Noto Sans KR', sans-serif; color: #222; font-size: 15px; font-weight: 300;}
+body {height: 100vh;  margin: : 0; font-family: 'Noto Sans KR', sans-serif; color: #222; font-size: 15px; font-weight: 300;}
 
 /*RESET CSS*/
 a {text-decoration: none; color: #fff;}
@@ -18,3 +18,29 @@ section {width: 1200px; margin: auto;}
 
 .consulting-header hr {width: 100px; height: 3px; margin: 25px auto; border:  none; background-color: #74b9ff;}
 .consulting-header hr p {}
+
+/* form */
+.consulting-form form {border-top: 5px solid #ccc; padding: 30px 0;}
+.consulting-form form label em {color: #8e44ad; font-style: normal;}
+
+.row {display: flex; margin: 10px 0;}
+.row .field {display: flex; flex-direction: column; flex: 1; margin-right: 30px;}
+.row .field label {margin-bottom: 5px;}
+.row .field input, .row .field textarea, .row .field select {padding: 7px;  border-radius: 4px; border: 1px solid #ddd; transition: 0.5s;}
+.row .field input:hover, .row. field textarea:hover {border: 1px solid #2980b9; box-shadow: 0 0 5px #2980b9;}
+.row .field textarea {height: 100px;}
+.row .field input:focus {background-color: #ecf0f1;}
+
+/* policy */
+.policy h4 {margin-bottom:  15px;}
+.policy iframe {width:  100%; height: 100px; padding: 7px; border-radius:  3px; border:  1px solid #ddd;}
+.btn-submit {display: block; padding: 7px 50px;  margin : auto; ;border: 1px solid #555; background-color: #fff;}
+.btn-submit:hover{background-color:#3498db; color: #fff;}
+
+@media screen and (max-width : 768px) {
+    section {width:  100%; padding: 20px; box-sizing: border-box;}
+    .consulting-header h1 {font-size: 22px;}
+    .row {flex-direction: column;}
+    .row .field {margin : 5px 0;}
+    .btn-submit {width: 100%;}
+}
