@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {font-family: 'Noto Sans KR', sans-serif; margin: 0; font-size:  15px; font-weight: 300; color:#333;}
+
+/*RESET CSS*/
+a {text-decoration: none; color: #222;}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: normal;}
+button {cursor: pointer; outline: none;}
+input, textarea, select {outline: none;}
+
+section {display: flex; width: 1000px; margin: auto;}
+.post {display: flex;}
+.post:nth-child(odd){flex-direction: column;}
+.post:nth-child(even){flex-direction: column-reverse;}
+.image {width: 250px; overflow: hidden;}
+.image img {display: block; width: 100%; transition: 0.3s; }
+.desc {display: flex; height: 250px; text-align: center; flex-direction: column; justify-content: center; background-color: #353b48; color: #fff;}
+.desc h2 {}
+.desc p {padding: 20px;}
+
+
+/*IMAGE HOVER EFFECT*/
+.image img:hover {transform: scale(1.05);}
+
+@media (min-width : 768px) and (max-width: 1024px) {
+    section {width: 100%; padding: 30px; box-sizing: border-box; flex-wrap: wrap;}
+    .post {flex-direction: row !important;}
+/*    .post:nth-child(odd) {}*/
+    .post:nth-child(even) {flex-direction: row-reverse !important;}
+    .image, .desc {flex: 1; height: 100%;}
+}
+
+@media (max-width : 767px) {
+    section {width: 100%; padding: 10px; box-sizing: border-box; flex-direction: column;}
+    .post:nth-child(even) {flex-direction: column;}
+    .image {width: 100%; }
+}

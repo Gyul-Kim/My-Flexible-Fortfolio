@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {font-family: 'Montserrat', sans-serif; color: #222; margin: 0;}
+
+/*RESET CSS*/
+a {text-decoration: none; color: #222;}
+h1, h2, h3, h4, h5, h6 {margin:  0; font-weight: normal;}
+button {cursor: pointer; outline: none;}
+button, input, textarea, select {outline: none; font-family:'Noto Sans KR', sans-serif;}
+
+/* section */
+section {width: 1200px; margin: auto;}
+.class-header {}
+.class-header h1 {font-size: 32px;}
+.class-header h1:after {content:"\f054"; font-family: fontawesome; margin-left: 10px; color: #bbb;}
+.class-header p {}
+
+/* items */
+.items {display: flex; justify-content: space-between;}
+.item {width: 290px; 
+/*    height: 350px; flex: 1;*/
+}
+/*.items:last-child {margin-right: 0;}*/
+
+.item {}
+.item img {width: 100%;}
+.item h4 {font-size:  16px; margin-bottom: 5px;;}
+.category {font-weight: bold; color: #0084ff;}
+.item p {margin : 5px 0;}
+.item p em{font-size: 15px; font-style: normal;}
+.item p .fa {color: #FFFC00;}
+.price {display: block; margin-bottom: 5px; font-weight: bold; color: #2980b9;}
+.badge {display: block; width: 70px;  padding: 2px 8px; border-radius: 4px; font-size: 14px; background-color:#e84393;}
+
+.badge.only {width: 30px;  background-color: #00cec9;}
+
+.item.event h4 {color: #d63031; margin-bottom: 20px;}
+.item.event img {border: 1px solid #ddd;}
+
+@media (max-width : 768px) {
+    section {width: 100%; padding: 15px; box-sizing:  border-box;}
+    .items {flex-direction: column;}
+    .item {width:  100%; margin : 0; margin-bottom: 20px;}
+    .item:nth-child(1) {order: 2;}
+    .item:nth-child(2) {order: 3;}
+    .item:nth-child(3) {order: 4;}
+    .item:nth-child(4) {order: 1;}
+}
