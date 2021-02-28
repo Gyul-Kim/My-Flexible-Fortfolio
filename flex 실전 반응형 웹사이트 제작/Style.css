@@ -3,10 +3,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 
 * {font-family: 'Montserrat', sans-serif;}
-body {margin: 0; line-height: 1.5em;  font-size: 15px; color: #222;}
+body {margin: 0; line-height: 1.5em;  font-size: 15px; font-weight: 300; color: #222;}
 
 /* RESET CSS */
 a {text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 500;}
 input, button, textarea {outline: none;}
 button {cursor: pointer;}
+
+/* COMMON CSS */
+.inner {width: 1300px; margin: auto;}
+
+/* HEADER */
+header {position: fixed; width: 100%; z-index: 10000;}
+.banner {display: flex; height: 40px; align-items: center; background-color: #111; transition: 0.5s;}
+.lnb {width: 1300px; margin: auto; text-align: right;}
+.lnb a {color: #ddd; margin: 10px;}
+.lnb a:last-child {margin: 0;}
+.lan a em {color: #bbb; margin: 10px;}
+
+nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: center; justify-content: space-between;}
+.logo {}
+.gnb {display: flex; padding: 0; margin: 0; list-style: none;}
+.gnb li {}
+.gnb li a {margin: 20px; color: #fff;}
+.gnb li a:hover {color: #333;}
+.gnb li a:last-child {margin-right: 0;}
+
+/* INTRO */
+.intro {height: 100vh; background: url(images/intro.jpg) no-repeat center center; background-size: cover; display: flex; text-align: center;}
+.heading {color: #fff; text-align: center;}
+.heading h1 {font-size: 70px; margin-bottom: 40px;}
+.heading p {padding: 0 150px; font-size: 22px; line-height: 1.5em;}
