@@ -10,6 +10,7 @@ a {text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 500;}
 input, button, textarea {outline: none;}
 button {cursor: pointer;}
+ul {list-style: none;}
 
 /* COMMON CSS */
 .inner {width: 1300px; margin: auto;}
@@ -35,3 +36,119 @@ nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: 
 .heading {color: #fff; text-align: center;}
 .heading h1 {font-size: 70px; margin-bottom: 40px;}
 .heading p {padding: 0 150px; font-size: 22px; line-height: 1.5em;}
+
+/* ABOUT */
+.about-content {display: flex; padding: 150px 0;}
+.about-content div {padding: 30px;}
+.desc {flex: 3; text-align: center;}
+.desc h2 {font-size: 30px; margin-bottom: 30px;}
+.desc p {font-size: 16px; line-height: 1.7em;}
+.desc a {color: #c25a3a; font-weight: 500;}
+.desc a:hover {text-decoration: underline;}
+.photo {flex: 2;}
+.photo img {width: 500px; border-radius: 70% 70%60% 80%;}
+
+/* RANKING SECTTION */
+.ranking {background-color: #f8f8f8;}
+.ranking-content {padding: 100px 0;}
+.ranking-content h2{ font-size: 30px; font-weight: 500; margin-bottom: 50px;}
+.items {display: flex; justify-content: space-between;}
+.item {width: 390px; height: 600px; border-radius: 30px 0 30px 0; background-color: #fff; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08); overflow: hidden;}
+
+.up-image {width: 390px; height: 285px;}
+.up-image img {height: 100%;}
+.down-desc {padding: 25px; padding-top: 50px;}
+.down-desc h3 {font-size: 22px; margin: 15px 0;}
+.down-desc p {font-size: 16px;}
+.down-desc a {color: #c25a3a;}
+.badge {background-color: #e60012; color: #fff; padding: 2px 16px; font-size: 16px;}
+.badge.must {background-color: #e60012;}
+.badge.good {background-color: #00a0e9;}
+
+.btn-explore {color: #c25a3a; font-weight: 500;}
+.btn-explore img {transition: 0.3s;}
+.btn-explore:hover img {transform: translateX(20px);
+/*magin-left : 150x;이랑 같음*/
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial {padding: 100px 0;}
+.testimonial-content {text-align: center;}
+.testimonial-content h2 {font-size: 30px; font-weight: 300; text-transform: uppercase;}
+.testimonial-content h2 b {}
+.testimonial-content hr {border: none; height: 4px; width: 120px; background-color: #1c45e3; margin: 30px auto;}
+
+.myslider {}
+.myslider div {
+    outline: none;
+}
+
+.client {display: flex; justify-content: center; align-items: center;}
+.client img {width: 85px; margin-right: 15px; border-radius: 50%;}
+.client span {display: block; text-align: left; font-size: 18px; line-height: 1.7em;}
+.client span b {display: block;}
+.comment {font-size: 16px; line-height: 1.6em; padding-right: 5px;}
+/* CALL ACTIOM SECTION */
+.callaction {display: flex; height: 450px; position: relative; background: url(images/callaction-01.jpg) no-repeat center center; background-size: cover; justify-content: center; align-items: center;}
+.callaction:before {content: '';  width: 100%;  height: 100%; position: absolute; background: linear-gradient(to right, rgba(160, 8, 160, 0.5), rgba(6, 87, 24, 0.8));}
+.callaction-heading {position: relative; text-align: center;}
+.callaction-heading h2 {color: #fff; font-size: 50px; font-weight: 300; line-height: 1.3em; letter-spacing: -1px; margin-bottom: 50px;}
+.callaction-heading h2 b {font-weight: 500;}
+.callaction-heading a {display: inline-block; padding: 10px 20px; border-radius: 5px; font-size: 18px; background-color: #2ecc71; color: #fff;}
+
+/* BLOG SECTION */
+.blog {}
+.blog-content {}
+.blog-content div {}
+.blog-header {}
+.post-content {display: flex; justify-content: space-between;}
+.post-content div {}
+.recent-post-items {flex: 2;}
+.shared-post-items {width: 360px;}
+
+.blog-header h6, .recent-post-items h6, .shraed-post-items h6 {font-size: 16px; text-transform: uppercase; color: #00a0e9;}
+.recent-post-items h6,.shraed-post-items h6 {color: #000; margin-bottom: 30px;}
+
+.blog-header h2 {font-size: 48px; font-weight: 600;text-transform: uppercase; margin: 50px 0;}
+.blog-header p {font-size: 28px; line-height: 1.6em;}
+.divider {border: none; border-bottom: 1px solid #ddd; margin: 50px 0;}
+.post-content hr.divider {margin: 30px 0;}
+
+.post-item {display: flex;}
+.post-item div {}
+.post-image {flex: 2; width: 360px; border-radius: 30px 0 30px 0; overflow: hidden;}
+.post-image img {width: 100%;}
+.post-desc {flex: 3; padding: 0 20px;}
+.shared-post-items .post-desc {padding: 0;}
+
+.post-desc h3 {font-size: 24px; text-transform: uppercase;}
+.post-desc p {font-size: 18px; line-height: 1.6em;}
+.post-desc p span {display: block; margin-top: 20px; font-size: 14px; color: #6d6d6d;}
+
+.shared-post-items .post-item {flex-direction: column;}
+
+/* FESTIVAL SECTION*/
+.festival {display: flex; height: 270px; background-color: #333; justify-content: center; align-items: center;}
+.festival-heading {text-align: center;}
+.festival-heading h3 {color: #fff; font-size: 26px; font-weight: 300px; margin-bottom: 30px;}
+.festival-heading h3 span {font-weight: 500;}
+.btns {}
+.btns a {display: inline-block; width: 200px; padding: 6px; border-radius:  5px; margin: 5px; background-color: #fff; font-size: 16px; font-weight: 400;}
+.btns a:nth-child(1) {background-color: #fac54b; color: #fff;}
+
+/* FOOTER */
+footer {background-color: #111; padding: 40px 0;}
+.footer-content {display: flex;}
+.footer-content ul {text-align: center;}
+.footer-content ul li {font-weight: 500; color: #fff;}
+.footer-content ul li:first-child {color: #d9d9d9; font-weight: 500;}
+.footer-content ul li a {color: #959695;}
+.footer-content ul li a:hover {text-decoration: underline;}
+.community {flex: 1;}
+.network {flex: 1;}
+.help {flex: 2;}
+.help li {color: #959595;}
+.help li:last-child {margin-top: 30px; color: #fff;}
+
+/* SLICK.JS */
+.myslider button {display: none !important;}

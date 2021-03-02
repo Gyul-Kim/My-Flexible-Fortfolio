@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>GYULOG</title>
-    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- SLICK js -->
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="Style.css">
-<!-- 스크립트 영역 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 <body>
 <!-- 상단 시작 -->
@@ -51,32 +55,264 @@
         </main>
         
         <section class="about">
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="about-content">
+                    <div class="desc">
+                        <h2>About Best Cities in the world</h2>
+                        <p>
+                            Factors including its highly rated nightlife landed Madrid, Spain, 12th on this list of world’s best cities. It’s not just about good weather or great food and nightlife. Unlike other best-of lists, Resonance’s annual ranking also considers a city’s diversity and, yes, the number of Instagram hashtags shared online to give a comprehensive view of what it’s like to visit and live in these places.
+                            <br>
+                            To figure out where you should travel to next, there are plenty of lists out there ranking the world’s best cities. Some use reader polls to determine which place lands at the top, while others base rankings on data like its livability or how easy it is to bike there.
+                        </p>
+                        <a href="#">
+                        Visit the place information</a>
+                    </div>
+                    <div class="photo">
+                        <img src="images/about-img-01.jpg" alt="소개이미지">
+                    </div>
+                </div>
+            </div>
         </section>
         
            <section class="lanking">
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="ranking-content">
+                    <h2>The World’s 25 Best Cities of 2020</h2>
+                    <div class="items">
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="images/best-city-01.jpg" alt="랭킹 이미지 1">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge must">MUST GO</span>
+                                <h2>LONDON, ENGLAND</h2>
+                                <p>London’s main sights might date back millennia, but the capital’s shops, bars, hotels, and restaurants emerge and evolve on an almost weekly basis.</p>
+                                <a  class="btn-explore"  href="#">EXPLORE
+                                    <img src="images/icon-arrow.png" alt="화살표 이미지">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="images/best-city-02.jpg" alt="랭킹 이미지 2">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge good">Good to go</span>
+                                <h2>New York City, United States</h2>
+                                <p>New York’s performing arts scene—both on Broadway and off—is beloved by visitors and locals alike, so it’s no surprise that the Big Apple took the number one spot.</p>
+                                <a class="btn-explore"  href="#">EXPLORE
+                                    <img src="images/icon-arrow.png" alt="화살표 이미지">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="images/best-city-03.jpg" alt="랭킹 이미지 3">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge good">Good to go</span>
+                                <h2>Paris, France</h2>
+                                <p>The Notre Dame fire was a devastating reminder of how well-loved Paris is by travelers worldwide, and as the capital gears up for the 2024 Olympics.</p>
+                                <a class="btn-explore" href="#">EXPLORE
+                                    <img src="images/icon-arrow.png" alt="화살표 이미지">
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
         </section>
         
            <section class="testimonial">
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="testimonial-content">
+                    <h2>what <b>our customers</b> are saying</h2>
+                    <hr>
+                    <div class="myslider">
+                        <div>
+                            <p class="client">
+                                <img src="images/client-01.jpg" alt="클라이언트 1">
+                                <span><b>GYUL_KIM</b>Seoul, Korea</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="images/client-02.jpg" alt="클라이언트 2">
+                                <span><b>Kate Whitney</b>Los Angeles, US</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="images/client-03.jpg" alt="클라이언트 3">
+                                <span><b>Kelly Muvils</b>New York, US</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="images/client-04.jpg" alt="클라이언트 4">
+                                <span><b>Oliver</b>Califonia, US</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="images/client-05.jpg" alt="클라이언트 5">
+                                <span><b>Sophia</b>London, UK</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="images/client-06.jpg" alt="클라이언트 6">
+                                <span><b>Charlotte</b>Washington, US</span>
+                            </p>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolor ipsam omnis nisi officiis cumque consectetur laborum ab tempore quas labore mollitia itaque, est alias. Consequuntur illum accusantium necessitatibus tempore itaque nam cum, omnis ut, ipsam, laborum architecto minima iusto provident magnam enim culpa earum, dolorem repudiandae illo facere tempora!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-           <section class="callation">
-            <div class="inner"></div>
+           <section class="callaction">
+            <div class="inner">
+                <div class="callaction-heading">
+                    <h2>The Most Simple & Powerful Way <br> to book your trip</h2>
+                    <a href="#">GET EARLY ACCESS</a>
+                </div>
+            </div>
         </section>
         
            <section class="blog">
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h6>feature article</h6>
+                        <h2>Can Americans Visit Mexico Right Now?</h2>
+                        <p>Technically, there’s a ban on nonessential travel across the border through September 21. Then how are people on vacation in Cabo and Cancun right now?
+                        </p>
+                        <a class="btn-explore" href="#">Read More
+                            <img src="images/icon-arrow.png" alt="화살표 이미지">
+                        </a>
+                    </div>
+                    <hr class="divider">
+                    <div class="post-content">
+                        <div class="recent-post-items">
+                            <h6>most recent</h6>
+                            <div class="post-item">
+                                <div class="post-image">
+                                    <img src="images/most-recent-01.jpg" alt="포스트 이미지1">
+                                </div>
+                                <div class="post-desc">
+                                    <h3>world ocean travel</h3>
+                                    <p>
+                                        The ocean provides a vast seascape for travel. Beyond the cruise ship there are other, more intimate, more environmentally sustainable ways to engage with the ocean. 
+                                        <span>July 12, 2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="divider">
+                            <div class="post-item">
+                                <div class="post-image">
+                                    <img src="images/most-recent-02.jpg" alt="포스트 이미지2">
+                                </div>
+                                <div class="post-desc">
+                                    <h3>come to South Korea</h3>
+                                    <p>
+                                        While only 60 years ago South Korea was considered a developing country, it’s now one of Asia’s economic and cultural leaders. Super-chic Seoul combines modernism with ancient history
+                                        <span>August 22, 2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="divider">
+                            <div class="post-item">
+                                <div class="post-image">
+                                    <img src="images/most-recent-03.jpg" alt="포스트 이미지3">
+                                </div>
+                                <div class="post-desc">
+                                    <h3>Vietnam & Cambodia</h3>
+                                    <p>
+                                        Start in Hanoi and end in Bangkok! With the Discovery tour Best of Vietnam & Cambodia, you have a 18 days tour package taking you through Hanoi, Vietnam and 10 other destinations. 
+                                        <span>June 30, 2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shared-post-items">
+                            <h6>most shared</h6>
+                            <div class="post-item">
+                                <div class="post-image">
+                                    <img src="images/most-shared-01.jpg" alt="공유 이미지 1">
+                                </div>
+                                <div class="post-desc">
+                                    <h3>Events in NYC</h3>
+                                    <p>
+                                        New York City is the place to see and do everything 
+                                        <span>May 02, 2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="post-item">
+                                <div class="post-image">
+                                    <img src="images/most-shared-02.jpg" alt="공유 이미지 2">
+                                </div>
+                                <div class="post-desc">
+                                    <h3>FESTIVALS</h3>
+                                    <p>
+                                        Experiencing a festival together with a group of like-minded 
+                                        <span>Jan 18, 2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
            <section class="festival">
-            <div class="inner"></div>
+            <div class="festival-heading">
+                <h3>SEE ALL FESTIVALS for the Best Trip Place</h3>
+                <div class="btns">
+                    <a href="#">Maxico Festivals</a>
+                    <a href="#">Barcelona Festivals</a>
+                </div>
+            </div>
         </section>
 <!-- 콘텐츠 끝 -->
 <!-- 하단 시작 -->
         <footer>
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="footer-content">
+                    <ul class="community">
+                        <li>Community</li>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Give A Gift</a></li>
+                        <li><a href="#">Customer Service FAQ</a></li>
+                        <li><a href="#">Access Your Subscription</a></li>
+                    </ul>
+                    
+                    <ul class="network">
+                        <li>Network</li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Service</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                    
+                    <ul class="help">
+                        <li>Help Preserve This Project</li>
+                        <li>We may earn a commission if you purchase an item featured on our site.</li>
+                        <li>Copyright ©  2020 GYUlOG. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
         </footer>
 <!-- 하단 끝 -->
     </div>
