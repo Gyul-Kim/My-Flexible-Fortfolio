@@ -1,35 +1,51 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {font-family: 'Montserrat', sans-serif;}
 body {margin: 0; line-height: 1.5em;  font-size: 15px; font-weight: 300; color: #222;}
 
 /* RESET CSS */
+html {
+  scroll-behavior: smooth;
+}
+
 a {text-decoration: none;}
-h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 500;}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: 500; line-height: 1.3em;}
 input, button, textarea {outline: none;}
 button {cursor: pointer;}
-ul {list-style: none;}
+ul {margin: 0; padding: 0; list-style: none;}
 
 /* COMMON CSS */
 .inner {width: 1300px; margin: auto;}
 
 /* HEADER */
-header {position: fixed; width: 100%; z-index: 10000;}
+header {position: fixed; width: 100%; z-index: 10000; transition: 0.5s;}
 .banner {display: flex; height: 40px; align-items: center; background-color: #111; transition: 0.5s;}
 .lnb {width: 1300px; margin: auto; text-align: right;}
 .lnb a {color: #ddd; margin: 10px;}
 .lnb a:last-child {margin: 0;}
-.lan a em {color: #bbb; margin: 10px;}
+.lab a em {color: #bbb; margin: 10px;}
 
-nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: center; justify-content: space-between;}
+nav {display: flex; width: 1300px; margin: auto; margin-top: 20px; align-items: center; justify-content: space-between;}
 .logo {}
-.gnb {display: flex; padding: 0; margin: 0; list-style: none;}
+.gnb {display: flex;}
 .gnb li {}
 .gnb li a {margin: 20px; color: #fff;}
 .gnb li a:hover {color: #333;}
 .gnb li a:last-child {margin-right: 0;}
+
+.trigger {display: none;}
+
+/* HEADER with active-class */
+header.active {background-color: #fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}
+header.active .gnb li a {color: #000;}
+header.active .banner {height: 0; overflow: hidden;}
+header.active nav {padding-bottom: 20px;}
+
+.gototop {position: fixed; width: 50px; height: 50px; border-radius: 50%; right: 20px; bottom: -20px; opacity: 0; color: #fff; font-size: 30px; text-align: center; line-height: 50px; transition: 0.5s; background: linear-gradient(45deg, skyblue, #c1e4f2);}
+.gototop.active {bottom: 20px; opacity: 1;}
 
 /* INTRO */
 .intro {height: 100vh; background: url(images/intro.jpg) no-repeat center center; background-size: cover; display: flex; text-align: center;}
@@ -51,7 +67,7 @@ nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: 
 /* RANKING SECTTION */
 .ranking {background-color: #f8f8f8;}
 .ranking-content {padding: 100px 0;}
-.ranking-content h2{ font-size: 30px; font-weight: 500; margin-bottom: 50px;}
+.ranking-content h2{ font-size: 30px; font-weight: 600; margin-bottom: 50px;}
 .items {display: flex; justify-content: space-between;}
 .item {width: 390px; height: 600px; border-radius: 30px 0 30px 0; background-color: #fff; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08); overflow: hidden;}
 
@@ -60,7 +76,7 @@ nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: 
 .down-desc {padding: 25px; padding-top: 50px;}
 .down-desc h3 {font-size: 22px; margin: 15px 0;}
 .down-desc p {font-size: 16px;}
-.down-desc a {color: #c25a3a;}
+
 .badge {background-color: #e60012; color: #fff; padding: 2px 16px; font-size: 16px;}
 .badge.must {background-color: #e60012;}
 .badge.good {background-color: #00a0e9;}
@@ -68,7 +84,7 @@ nav {display: flex; width: 1300ox; margin: auto; margin-top: 20px; align-items: 
 .btn-explore {color: #c25a3a; font-weight: 500;}
 .btn-explore img {transition: 0.3s;}
 .btn-explore:hover img {transform: translateX(20px);
-/*magin-left : 150x;이랑 같음*/
+/*magin-left : 15px;이랑 같음*/
 }
 
 /* TESTIMONIAL SECTION */
@@ -151,4 +167,8 @@ footer {background-color: #111; padding: 40px 0;}
 .help li:last-child {margin-top: 30px; color: #fff;}
 
 /* SLICK.JS */
-.myslider button {display: none !important;}
+button.slick-arrow {
+  /* border: 1px solid #000; */
+  display: none !important;
+}
+
